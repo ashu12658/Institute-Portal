@@ -12,26 +12,6 @@ const studentSchema = mongoose.Schema(
         password: { type: String, required: true },
         course:{type:String,required:true},// course field added here
         batch:{type:String},  // batch field added here
-        // Job Application Status Tracking
-        // appliedJobs: [
-        //     {
-        //         jobId: { type: mongoose.Schema.Types.ObjectId, ref: 'Job' },
-        //         appliedAt: { type: Date, default: Date.now },
-        //         status: { type: String, enum: ['pending', 'shortlisted', 'rejected'], default: 'pending' },
-        //     },
-        // ],
-        // rejectedJobs: [
-        //     {
-        //         jobId: { type: mongoose.Schema.Types.ObjectId, ref: 'Job' },
-        //         rejectedAt: { type: Date, default: Date.now },
-        //     },
-        // ],
-        // shortlistedJobs: [
-        //     {
-        //         jobId: { type: mongoose.Schema.Types.ObjectId, ref: 'Job' },
-        //         shortlistedAt: { type: Date, default: Date.now },
-        //     },
-        // ],
         skills: {
             type: [String], // Array of skill strings
             default: []
