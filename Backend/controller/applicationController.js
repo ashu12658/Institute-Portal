@@ -34,24 +34,6 @@ exports.applyForJob = async (req, res) => {
 };
 
 
-// Update application status
-// exports.updateApplicationStatus = async (req, res) => {
-//   try {
-//     const { status } = req.body;
-//     const application = await Application.findById(req.params.id);
-
-//     if (!application) {
-//       return res.status(404).json({ message: 'Application not found' });
-//     }
-
-//     application.status = status || application.status;
-//     await application.save();
-
-//     res.status(200).json(application);
-//   } catch (error) {
-//     res.status(500).json({ message: 'Error updating application status', error });
-//   }
-// };
 
 exports.updateApplicationStatus = async (req, res) => {
   try {
